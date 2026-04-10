@@ -8,11 +8,13 @@ type DetailsScreenProps = {
     route: DetailsScreenRouteProp;
 };
 export default function DetailsScreen({ route }: DetailsScreenProps) {
-    const { title, description } = route.params;
+    const { title, description, hour, location } = route.params;
     return (
         <View style={styles.container}>
             <Text style={styles.title}>{title}</Text>
             <Text>{description}</Text>
+            <Text>{hour}</Text>
+            <Text>{location}</Text>
         </View>
     );
 }
