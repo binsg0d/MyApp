@@ -1,12 +1,14 @@
 import { RouteProp } from "@react-navigation/native";
-import { StyleSheet, Text, View } from "react-native";
-import { RootStackParamList } from "../(tabs)/index";
+import { Text, View } from "react-native";
+import { styles } from "../styles/detailScreen.styles";
+import { RootStackParamList } from "../types/Navigation";
 
 type DetailsScreenRouteProp = RouteProp<RootStackParamList, "Details">;
 
 type DetailsScreenProps = {
     route: DetailsScreenRouteProp;
 };
+
 export default function DetailsScreen({ route }: DetailsScreenProps) {
     const { title, description, hour, location } = route.params;
     return (
@@ -18,17 +20,3 @@ export default function DetailsScreen({ route }: DetailsScreenProps) {
         </View>
     );
 }
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        padding: 20,
-        alignItems: "center",
-        justifyContent: "center",
-    },
-    title: {
-        fontSize: 24,
-        fontWeight: "bold",
-        marginBottom: 10,
-    },
-});

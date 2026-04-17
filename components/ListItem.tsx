@@ -1,44 +1,35 @@
-import { Pressable, StyleSheet, Text } from "react-native";
+import { Pressable, Text, View } from "react-native";
+import { styles } from "../app/styles/listItem.styles";
 
 type ListItemProps = {
     title: string;
     description: string;
     hour: string;
     location: string;
+    category: string;
     onPress?: () => void;
-    isNotActive?: boolean;
 };
 
-export default function ListItem({ title, description, hour, location, onPress }: ListItemProps) {
+export default function ListItem({ title, description, hour, location, category, onPress }: ListItemProps) {
     return (
         <Pressable
             onPress={onPress}
             style={({ pressed, hovered }) => [
                 styles.container,
-                (pressed || hovered) && styles.highlightedContainer
+                (pressed || hovered) && styles.highlightedContainer,
             ]}
         >
-            <Text style={styles.title}>{title}</Text>
-            <Text>{description}</Text>
-            <Text>{hour}</Text>
-            <Text>{location}</Text>
+            <View style={styles.header}>
+                <Text style={styles.title}>{title}</Text>
+                <View style={styles.badge}>
+                    <Text style={styles.badgeText}>{category}</Text>
+                </View>
+            </View>
+            <Text style={styles.description}>{description}</Text>
+            <View style={styles.meta}>
+                <Text style={styles.metaText}>🕐 {hour}</Text>
+                <Text style={styles.metaText}>📍 {location}</Text>
+            </View>
         </Pressable>
     );
 }
-
-const styles = StyleSheet.create({
-    container: {
-        padding: 16,
-        borderBottomWidth: 1,
-        borderBottomColor: "#ccc",
-    },
-    title: {
-        fontSize: 16,
-        fontWeight: "bold",
-    },
-    // dodajemy styl podświetlenia do ListItem
-    highlightedContainer: {
-        backgroundColor: '#fff3cd',
-        opacity: .7,
-    },
-});
