@@ -1,19 +1,20 @@
 export type EventCategory =
-    | "wykład"
-    | "warsztaty"
-    | "seminarium"
-    | "hackathon"
-    | "obrony"
-    | "spotkanie"
-    | "targi"
-    | "ćwiczenia"
-    | "integracja";
+  | "Wykład"
+  | "Warsztaty"
+  | "Seminarium"
+  | "Hackathon"
+  | "Obrony"
+  | "Spotkanie"
+  | "Targi"
+  | "Ćwiczenia"
+  | "Integracja";
 
 export type EventItem = {
-    id: number;
-    title: string;
-    description: string;
-    hour: string;
-    location: string;
-    category: EventCategory;
+  id: number;
+  title: string;
+  description: string;
+  hour: string;
+  location: string;
+  category: EventCategory;
+  speaker: string;
 };

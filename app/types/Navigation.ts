@@ -1,3 +1,5 @@
+import { EventCategory } from "./Event";
+
 export type RootStackParamList = {
     Home: undefined;
     Details: {
@@ -5,5 +7,7 @@ export type RootStackParamList = {
         description: string;
         hour: string;
         location: string;
+        category: EventCategory;
+        speaker: string;
     };
 };

@@ -7,10 +7,11 @@ type ListItemProps = {
     hour: string;
     location: string;
     category: string;
+    speaker: string;
     onPress?: () => void;
 };
 
-export default function ListItem({ title, description, hour, location, category, onPress }: ListItemProps) {
+export default function ListItem({ title, description, hour, location, category, speaker, onPress }: ListItemProps) {
     return (
         <Pressable
             onPress={onPress}
@@ -29,6 +30,7 @@ export default function ListItem({ title, description, hour, location, category,
             <View style={styles.meta}>
                 <Text style={styles.metaText}>🕐 {hour}</Text>
                 <Text style={styles.metaText}>📍 {location}</Text>
+                {speaker ? <Text style={styles.metaText}>🎤 {speaker}</Text> : null}
             </View>
         </Pressable>
     );

@@ -7,7 +7,8 @@ export const events: EventItem[] = [
         description: "Wprowadzenie do algorytmów sortowania i wyszukiwania.",
         hour: "08:00",
         location: "Sala A1",
-        category: "wykład",
+        category: "Wykład",
+        speaker: "dr Anna Kowalska",
     },
     {
         id: 2,
@@ -15,7 +16,8 @@ export const events: EventItem[] = [
         description: "Praktyczne warsztaty z tworzenia aplikacji mobilnych.",
         hour: "10:00",
         location: "Laboratorium 204",
-        category: "warsztaty",
+        category: "Warsztaty",
+        speaker: "Piotr Zieliński",
     },
     {
         id: 3,
@@ -23,7 +25,8 @@ export const events: EventItem[] = [
         description: "Najnowsze trendy w sztucznej inteligencji i uczeniu maszynowym.",
         hour: "12:00",
         location: "Aula Główna",
-        category: "seminarium",
+        category: "Seminarium",
+        speaker: "prof. Marek Wiśniewski",
     },
     {
         id: 4,
@@ -31,7 +34,8 @@ export const events: EventItem[] = [
         description: "24-godzinny hackathon dla studentów wszystkich kierunków.",
         hour: "09:00",
         location: "Centrum Innowacji",
-        category: "hackathon",
+        category: "Hackathon",
+        speaker: "",
     },
     {
         id: 5,
@@ -39,7 +43,8 @@ export const events: EventItem[] = [
         description: "Publiczne obrony prac inżynierskich grupy 3IK.",
         hour: "13:00",
         location: "Sala Konferencyjna B",
-        category: "obrony",
+        category: "Obrony",
+        speaker: "dr inż. Tomasz Nowak",
     },
     {
         id: 6,
@@ -47,7 +52,8 @@ export const events: EventItem[] = [
         description: "Miesięczne spotkanie Koła Naukowego Informatyków.",
         hour: "16:00",
         location: "Sala 310",
-        category: "spotkanie",
+        category: "Spotkanie",
+        speaker: "Karolina Jabłońska",
     },
     {
         id: 7,
@@ -55,7 +61,8 @@ export const events: EventItem[] = [
         description: "Spotkanie z pracodawcami z branży technologicznej.",
         hour: "11:00",
         location: "Hol Główny",
-        category: "targi",
+        category: "Targi",
+        speaker: "",
     },
     {
         id: 8,
@@ -63,7 +70,8 @@ export const events: EventItem[] = [
         description: "Prelegent z branży omówi zagrożenia i najlepsze praktyki.",
         hour: "14:00",
         location: "Sala Wykładowa C3",
-        category: "wykład",
+        category: "Wykład",
+        speaker: "Michał Dąbrowski",
     },
     {
         id: 9,
@@ -71,7 +79,8 @@ export const events: EventItem[] = [
         description: "Projektowanie i optymalizacja zapytań SQL.",
         hour: "15:00",
         location: "Laboratorium 112",
-        category: "ćwiczenia",
+        category: "Ćwiczenia",
+        speaker: "dr Agnieszka Lewandowska",
     },
     {
         id: 10,
@@ -79,7 +88,8 @@ export const events: EventItem[] = [
         description: "Spotkanie integracyjne dla studentów pierwszego roku.",
         hour: "18:00",
         location: "Dziedziniec Kampusu",
-        category: "integracja",
+        category: "Integracja",
+        speaker: "Młody G",
     },
     {
         id: 11,
@@ -87,7 +97,8 @@ export const events: EventItem[] = [
         description: "Konteneryzacja aplikacji i podstawy CI/CD w praktyce.",
         hour: "09:30",
         location: "Laboratorium 301",
-        category: "warsztaty",
+        category: "Warsztaty",
+        speaker: "Bartosz Krawczyk",
     },
     {
         id: 12,
@@ -95,7 +106,8 @@ export const events: EventItem[] = [
         description: "Architektura i trening głębokich sieci neuronowych.",
         hour: "11:30",
         location: "Sala B2",
-        category: "wykład",
+        category: "Wykład",
+        speaker: "Jakub Chmielak",
     },
     {
         id: 13,
@@ -103,7 +115,8 @@ export const events: EventItem[] = [
         description: "Zastosowanie technologii blockchain poza kryptowalutami.",
         hour: "13:30",
         location: "Sala Konferencyjna A",
-        category: "seminarium",
+        category: "Seminarium",
+        speaker: "prof. Łukasz Wójcik",
     },
     {
         id: 14,
@@ -111,7 +124,8 @@ export const events: EventItem[] = [
         description: "Projektowanie intuicyjnych interfejsów użytkownika.",
         hour: "10:30",
         location: "Studio Projektowe",
-        category: "warsztaty",
+        category: "Warsztaty",
+        speaker: "Natalia Szymańska",
     },
     {
         id: 15,
@@ -119,6 +133,7 @@ export const events: EventItem[] = [
         description: "Indywidualne spotkania z mentorami z branży IT.",
         hour: "17:00",
         location: "Sala 205",
-        category: "spotkanie",
+        category: "Spotkanie",
+        speaker: "Radosław Pawlak",
     },
 ];
